@@ -3,9 +3,6 @@
 <head>
 	<title>Reintialize</title>
 	<style>
-form {
-    border: 3px solid #f1f1f1;
-}
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -24,12 +21,24 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
+	border-radius:10px;
 }
 
-.cancelbtn {
+.resetbtn {
     width: auto;
-    padding: 10px 18px;
+    padding: 10px 10px;
     background-color: #f44336;
+	border-radius:10px;
+}
+.formcontainer{
+    border-radius:1em;
+	background-color:white;
+	width:25%;
+	position:fixed;
+    top: 50%;
+	left:50%;
+	margin-top: -14em; 
+    margin-left: -14em;
 }
 
 .imgcontainer {
@@ -56,14 +65,14 @@ span.psw {
        display: block;
        float: none;
     }
-    .cancelbtn {
+    .resetbtn {
        width: 100%;
     }
 }
 </style>
 	</head>
-<body>
-	<div>
+<body style="background-image:url('bgimg.jpg')">
+	<div class="formcontainer">
 		<form action="#">
 			<div class="imgcontainer">
 				<img src="img1.jpg" alt="avatar" class="avatar">
@@ -76,9 +85,10 @@ span.psw {
 				<button type="submit">Login</button>
 				<input type="checkbox" checked="checked">Rememberme
 			</div>
-			<div class="container" style="background-color:#f1f1f1">
-				<button type="button" class="cancelbtn">cancel</button>
-				<span class="psw">forgot<a href="#">password?</a></span>
+			<div class="container">
+				<button type="button" class="resetbtn">RESET</button>
+				<button type="button" class="resetbtn">REGISTER</button>
+				<span class="psw"><a href="#">forgot password?</a></span>
 			</div>
 		</form>
 	</div>
