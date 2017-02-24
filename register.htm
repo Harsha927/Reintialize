@@ -1,0 +1,66 @@
+<!Doctype.html>
+<html>
+<head>
+	<title>Reintialize</title>
+	<link rel="icon" type="image/gif" href="logo.png" />
+	<style>
+	body{
+		background-image:url("bgimg.jpg");
+	}
+	input[type=text],input[type=password]{
+		width:100%;
+		padding:8px;
+		margin:8px 0 8px 0;
+		}
+	.container{
+		width:300px;
+		}
+	.btn{
+		margin:24px 50px 0 0;
+		padding:4px;
+		border-radius:1em;
+		background-color:#f44336;
+		color:#ffffff;
+		}
+	.formcontainer{
+		position:absolute;
+		width:300px;
+		height:auto;
+		top:50%;
+		left:50%;
+		margin-top:-15em;
+		margin-left:-12em;
+		padding:2em;
+		background-color:#ffffff;
+		border-radius:1em;
+		}
+	.avatar{
+		text-align="center";
+	}
+	</style>
+		
+</head>
+<body>
+	<div>
+		<form class="formcontainer">
+			<div class="avatar">
+				<img src="img1.png">
+			</div>
+			<div class="container">
+			<label><b>Name</b></label>
+			<input type="text" placeholder="enter your name" name="uname" required>
+			<label><b>Mail-id</b></label>
+			<input type="text" placeholder="enter your email id" name="uid" required>
+			<label><b>Password</b></label>
+			<input type="password" placeholder="set your password" name="pass" required>
+			<label><b>Retype Password</b></label>
+			<input type="password" placeholder="confirm your password" name="pass" required>
+			</div>
+			<div class="container">
+				<button class="btn" type="submit">Register</button>
+				<button class="btn" type="submit">Reset</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
